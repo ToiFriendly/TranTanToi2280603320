@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Trần Tấn Tới</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --bg-color: #f8fafc;
+            --text-color: #1e293b;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .cv-container {
+            background: var(--card-bg);
+            width: 90%;
+            max-width: 800px;
+            padding: 40px;
+            margin: 20px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        header {
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            margin: 0;
+            color: var(--primary-color);
+            font-size: 2.5rem;
+        }
+
+        .mssv {
+            font-size: 1.1rem;
+            color: #64748b;
+            font-weight: 500;
+        }
+
+        .section-title {
+            font-size: 1.4rem;
+            border-left: 4px solid var(--primary-color);
+            padding-left: 10px;
+            margin: 25px 0 15px;
+        }
+
+        .skills-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .skill-item {
+            display: flex;
+            align-items: center;
+            background: #eff6ff;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+
+        .skill-item:hover {
+            transform: translateY(-3px);
+            background: #dbeafe;
+        }
+
+        .skill-item i {
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+
+        .fa-docker { color: #2496ed; }
+        .fa-github { color: #181717; }
+
+        .footer-note {
+            margin-top: 40px;
+            padding: 15px;
+            background: #f1f5f9;
+            border-radius: 6px;
+            font-style: italic;
+            font-size: 0.9rem;
+            color: #475569;
+            text-align: center;
+        }
+
+        .deploy-badge {
+            display: inline-block;
+            background: #22c55e;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            margin-left: 10px;
+            vertical-align: middle;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cv-container">
+        <header>
+            <h1>Trần Tấn Tới</h1>
+            <div class="mssv">MSSV: 2280603320</div>
+            <p>Software Developer</p>
+        </header>
+
+        <section>
+            <div class="section-title">Giới thiệu bản thân</div>
+            <p>
+                Tôi là một sinh viên ngành Công nghệ thông tin với niềm đam mê xây dựng các ứng dụng web 
+                và tối ưu hóa quy trình triển khai phần mềm. Tôi luôn tìm tòi những công nghệ mới để 
+                cải thiện hiệu suất và trải nghiệm người dùng.
+            </p>
+        </section>
+
+        <section>
+            <div class="section-title">Kỹ năng tiêu biểu</div>
+            <div class="skills-container">
+                <div class="skill-item">
+                    <i class="fab fa-docker"></i> Docker
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-github"></i> GitHub
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-code"></i> Web Development
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer-note">
+            <p>
+                <i class="fas fa-info-circle"></i> 
+                Dòng ghi chú: Kiểm thử deploy web lên Docker thành công.
+                <span class="deploy-badge">Stable</span>
+            </p>
+        </footer>
+    </div>
+
+</body>
+</html>
