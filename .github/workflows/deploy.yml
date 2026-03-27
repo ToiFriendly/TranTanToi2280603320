@@ -24,11 +24,11 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKER_REPO }}:latest
+          tags: trantantoi/trantantoi-cv:latest
 
       - name: Triển khai lên DevOps Classroom
         run: |
-          REPO="${{ secrets.DOCKER_REPO }}"
+          REPO="trantantoi/trantantoi-cv"
           CONTAINER_PORT=3000
           RESPONSE=$(curl -sS -w "\n%{http_code}" -X POST "${{ secrets.DEPLOY_URL }}?repo=$REPO&tag=latest&slot=2&container_port=$CONTAINER_PORT&strict_container_port=0")
           BODY=$(echo "$RESPONSE" | sed '$d')
